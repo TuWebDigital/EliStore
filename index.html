@@ -2,9 +2,18 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tienda EliStore🌸</title>
-  <link rel="icon" href="https://i.ibb.co/N69ZPYqL/Whats-App-Image-2026-01-17-at-11-50-45-AM-removebg-preview.png" type="image/x-icon">
+
+<title>Tienda EliStore | Tienda de Ropa Online y Accesorios</title>
+
+<meta name="description" content="EliStore es una tienda de ropa online especializada en moda femenina, accesorios y mentoles. Compra fácil por WhatsApp y envíos a todo el país.">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="EliStore">
+
+<link rel="icon" href="https://i.ibb.co/N69ZPYqL/Whats-App-Image-2026-01-17-at-11-50-45-AM-removebg-preview.png" type="image/x-icon">
+
 <style>
 :root{
   --rosa:#e75480;
@@ -92,13 +101,31 @@ details { margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10
 summary { font-weight: bold; cursor: pointer; color: #333; outline: none; }
 .contact-link { color: var(--verde); text-decoration: none; font-weight: bold; }
 </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "EliStore",
+  "description": "Tienda de ropa online especializada en moda femenina y accesorios.",
+  "url": "https://tuwebdigital.github.io/EliStore/",
+  "telephone": "+58 412 8742705"
+}
+</script>
+
 </head>
 <body>
-
 <header>
-  <h1>Tienda EliStore🌸</h1>
-  <p>Moda y estilo al alcance de un clic</p>
+  <h1>Tienda de Ropa Online EliStore🌸</h1>
+  <p>Moda femenina, accesorios y compras fáciles por WhatsApp</p>
 </header>
+  <section class="section-card">
+  <h2 class="section-title">Tienda de Moda Femenina Online</h2>
+  <p class="footer-info">
+    EliStore es una tienda de ropa online especializada en moda femenina, accesorios y productos seleccionados
+    para mujeres modernas. Vendemos de forma 100% online con atención personalizada por WhatsApp y envíos
+    a todo el país.
+  </p>
+</section>
 
 <div class="trust-bar">
     <div class="trust-item"><span>🔒</span><h4>Compra Segura</h4><p>WhatsApp</p></div>
@@ -110,13 +137,14 @@ summary { font-weight: bold; cursor: pointer; color: #333; outline: none; }
     ⚠️ <b>¿Cómo comprar?</b> Elige tus favoritos y presiona el botón. Te atenderemos personalmente por WhatsApp para confirmar tu pedido.
 </div>
 
-<h2 class="cat-title">👗 Ropa: Suéters para Damas</h2>
+<h2 class="cat-title"><h2 class="cat-title">👗 Suéters para Damas – Tienda de Ropa Online</h2>
+</h2>
 <div class="products" id="list-ropa"></div>
 
-<h2 class="cat-title">💍 Accesorios</h2>
+<h2 class="cat-title">💍 Accesorios– Tienda de Ropa Online</h2>
 <div class="products" id="list-accesorios"></div>
 
-<h2 class="cat-title">🍃 Mentoles</h2>
+<h2 class="cat-title">🍃 Mentoles– Tienda de Ropa Online</h2>
 <div class="products" id="list-mentoles"></div>
 
 <div class="section-card">
@@ -209,7 +237,8 @@ function fill(data, containerId) {
     const msg = encodeURIComponent(`Hola EliStore 🌸, me interesa: *${p.name}*. ¿Está disponible?`);
     container.innerHTML += `
       <div class="product">
-        <img src="${p.img}" loading="lazy">
+       <img src="${p.img}" alt="${p.name} en tienda de ropa EliStore" loading="lazy">
+
         <div class="content">
           <h3>${p.name}</h3>
           <p>${p.desc}</p>
