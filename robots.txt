@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap:https://tuwebdigital.github.io/EliStore/sitemap.xml
